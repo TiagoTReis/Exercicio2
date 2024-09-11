@@ -1,6 +1,8 @@
 package Entidades;
 
-public class Pokemon {
+import Aplicacao.MenuMetodos;
+
+public class Pokemon implements MenuMetodos {
     // Atributos
     private String cor;
     private String tipo;
@@ -72,5 +74,13 @@ public class Pokemon {
         pokemon.capturar();
         pokemon.defender();
     }
-}
 
+    public void menu() {
+        System.out.println("POKEMON");
+        System.out.println("Escolha uma opção");
+        System.out.println("1 - Mostrar informações");
+        System.out.println("2 - Lutar");
+        System.out.println("3 - Defender");
+        System.out.println("4 - Sair");
+    }
+}

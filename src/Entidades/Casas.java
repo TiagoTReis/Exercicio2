@@ -1,6 +1,8 @@
 package Entidades;
 
-public class Casas {
+import Aplicacao.MenuMetodos;
+
+public class Casas implements MenuMetodos {
     // Atributos
     private String cor;
     private String tamanho;
@@ -14,27 +16,27 @@ public class Casas {
     }
 
     // Métodos getters e setters
-    public String getcor() {
+    public String getCor() {
         return cor;
     }
 
-    public void setcor(String cor) {
+    public void setCor(String cor) {
         this.cor = cor;
     }
 
-    public String gettamanho() {
+    public String getTamanho() {
         return tamanho;
     }
 
-    public void settamanho(String tamanho) {
+    public void setTamanho(String tamanho) {
         this.tamanho = tamanho;
     }
 
-    public String getformato() {
+    public String getFormato() {
         return formato;
     }
 
-    public void setformato(String formato) {
+    public void setFormato(String formato) {
         this.formato = formato;
     }
 
@@ -73,5 +75,14 @@ public class Casas {
         casas.pintar();
     }
 
+    public void menu() {
+        System.out.println("CASAS");
+        System.out.println("Escolha uma opção");
+        System.out.println("1 - Mostrar informações");
+        System.out.println("2 - Construir");
+        System.out.println("3 - Pintar");
+        System.out.println("4 - Sair");
+
+    }
 }
 

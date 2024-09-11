@@ -1,6 +1,8 @@
 package Entidades;
 
-public class Frutas {
+import Aplicacao.MenuMetodos;
+
+public class Frutas implements MenuMetodos {
     // Atributos
     private String sabor;
     private String cor;
@@ -14,27 +16,27 @@ public class Frutas {
     }
 
     // Métodos getters e setters
-    public String getsabor() {
+    public String getSabor() {
         return sabor;
     }
 
-    public void setsabor(String sabor) {
+    public void setSabor(String sabor) {
         this.sabor = sabor;
     }
 
-    public String getcor() {
+    public String getCor() {
         return cor;
     }
 
-    public void setcor(String cor) {
+    public void setCor(String cor) {
         this.cor = cor;
     }
 
-    public String gettextura() {
+    public String getTextura() {
         return textura;
     }
 
-    public void settextura(String textura) {
+    public void setTextura(String textura) {
         this.textura = textura;
     }
 
@@ -71,6 +73,16 @@ public class Frutas {
         frutas.pegar();
         frutas.comer();
         frutas.lavar();
+    }
+
+    public void menu() {
+        System.out.println("FRUTAS");
+        System.out.println("Escolha uma opção");
+        System.out.println("1 - Mostrar informações");
+        System.out.println("2 - Lavar");
+        System.out.println("3 - Comer");
+        System.out.println("4 - Sair");
+
     }
 
 }

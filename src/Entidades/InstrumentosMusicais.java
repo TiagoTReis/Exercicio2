@@ -1,6 +1,8 @@
 package Entidades;
 
-public class InstrumentosMusicais {
+import Aplicacao.MenuMetodos;
+
+public class InstrumentosMusicais implements MenuMetodos {
     // Atributos
     private String tipo;
     private String tamanho;
@@ -71,6 +73,16 @@ public class InstrumentosMusicais {
         instrumentosMusicais.afinar();
         instrumentosMusicais.tocar();
         instrumentosMusicais.ouvir();
+    }
+
+    public void menu() {
+        System.out.println("INSTRUMENTOS MUSICAIS");
+        System.out.println("Escolha uma opção");
+        System.out.println("1 - Mostrar informações");
+        System.out.println("2 - Afinar");
+        System.out.println("3 - Tocar");
+        System.out.println("4 - Sair");
+
     }
 }
 

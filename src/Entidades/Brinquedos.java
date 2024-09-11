@@ -1,6 +1,8 @@
 package Entidades;
 
-public class Brinquedos {
+import Aplicacao.MenuMetodos;
+
+public class Brinquedos implements MenuMetodos {
     // Atributos
     private String tamanho;
     private String cor;
@@ -62,7 +64,7 @@ public class Brinquedos {
     // Método principal para testar a classe brinquedos
     public static void main(String[] args) {
         // Criando um objeto brinquedos
-        Brinquedos brinquedos = new Brinquedos("pequeno", "amarelo", "plastico");
+        Brinquedos brinquedos = new Brinquedos("Tamanho: Pequeno", "Cor: Amarelo", "Material: Plastico");
 
         // Exibindo informações do brinquedos
         System.out.println(brinquedos);
@@ -71,6 +73,15 @@ public class Brinquedos {
         brinquedos.guardar();
         brinquedos.brincar();
         brinquedos.pegar();
+    }
+
+    public void menu() {
+        System.out.println("BRINQUEDOS");
+        System.out.println("Escolha uma opção");
+        System.out.println("1 - Mostrar informações");
+        System.out.println("2 - Guardar");
+        System.out.println("3 - Brincar");
+        System.out.println("4 - Sair");
     }
 }
 

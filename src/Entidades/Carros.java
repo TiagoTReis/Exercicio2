@@ -1,6 +1,8 @@
 package Entidades;
 
-public class Carros {
+import Aplicacao.MenuMetodos;
+
+public class Carros implements MenuMetodos {
     // Atributos
     private String cor;
     private String marca;
@@ -14,27 +16,27 @@ public class Carros {
     }
 
     // Métodos getters e setters
-    public String getcor() {
+    public String getCor() {
         return cor;
     }
 
-    public void setcor(String cor) {
+    public void setCor(String cor) {
         this.cor = cor;
     }
 
-    public String getmarca() {
+    public String getMarca() {
         return marca;
     }
 
-    public void setmarca(String marca) {
+    public void setMarca(String marca) {
         this.marca = marca;
     }
 
-    public String gettipo() {
+    public String getTipo() {
         return tipo;
     }
 
-    public void settipo(String tipo) {
+    public void setTipo(String tipo) {
         this.tipo = tipo;
     }
 
@@ -73,4 +75,13 @@ public class Carros {
         carros.abastecer();
     }
 
+    public void menu() {
+        System.out.println("CARROS");
+        System.out.println("Escolha uma opção");
+        System.out.println("1 - Mostrar informações");
+        System.out.println("2 - Frear");
+        System.out.println("3 - Acelerar");
+        System.out.println("4 - Sair");
+
+    }
 }

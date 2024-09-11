@@ -1,6 +1,8 @@
 package Entidades;
 
-public class Gatos {
+import Aplicacao.MenuMetodos;
+
+public class Gatos implements MenuMetodos {
     // Atributos
     private String raca;
     private String cor;
@@ -14,27 +16,27 @@ public class Gatos {
     }
 
     // Métodos getters e setters
-    public String getraca() {
+    public String getRaca() {
         return raca;
     }
 
-    public void setraca(String raca) {
+    public void setRaca(String raca) {
         this.raca = raca;
     }
 
-    public String getcor() {
+    public String getCor() {
         return cor;
     }
 
-    public void setcor(String cor) {
+    public void setCor(String cor) {
         this.cor = cor;
     }
 
-    public String gettamanho() {
+    public String getTamanho() {
         return tamanho;
     }
 
-    public void settamanho(String tamanho) {
+    public void setTamanho(String tamanho) {
         this.tamanho = tamanho;
     }
 
@@ -72,6 +74,16 @@ public class Gatos {
         gatoss.miar();
         gatoss.comer();
     }
+    public void menu() {
+        System.out.println("Gatos");
+        System.out.println("Escolha uma opção");
+        System.out.println("1 - Mostrar informações");
+        System.out.println("2 - Arranhar");
+        System.out.println("3 - Miar");
+        System.out.println("4 - Sair");
+
 }
+}
+
 
 

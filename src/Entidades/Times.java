@@ -1,6 +1,8 @@
 package Entidades;
 
-public class Times {
+import Aplicacao.MenuMetodos;
+
+public class Times implements MenuMetodos {
     // Atributos
     private String regiao;
     private String cor;
@@ -14,27 +16,27 @@ public class Times {
     }
 
     // Métodos getters e setters
-    public String getregiao() {
+    public String getRegiao() {
         return regiao;
     }
 
-    public void setregiao(String regiao) {
+    public void setRegiao(String regiao) {
         this.regiao = regiao;
     }
 
-    public String getcor() {
+    public String getCor() {
         return cor;
     }
 
-    public void setcor(String cor) {
+    public void setCor(String cor) {
         this.cor = cor;
     }
 
-    public String getestadio() {
+    public String getEstadio() {
         return estadio;
     }
 
-    public void setestadio(String estadio) {
+    public void setEstadio(String estadio) {
         this.estadio = estadio;
     }
 
@@ -72,5 +74,13 @@ public class Times {
         times.jogar();
         times.perder();
     }
-}
 
+    public void menu() {
+        System.out.println("TIMES");
+        System.out.println("Escolha uma opção");
+        System.out.println("1 - Mostrar informações");
+        System.out.println("2 - Jogar");
+        System.out.println("3 - Ganhar");
+        System.out.println("4 - Sair");
+    }
+}
